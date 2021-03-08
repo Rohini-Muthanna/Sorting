@@ -7,7 +7,7 @@ public class SortingCategory {
     public static void main(String[] args) {
         JSONArray categoryArray = new JSONArray();
 
-        //First Employee
+        //Sample Category details
         JSONObject categoryDetails1 = new JSONObject();
         categoryDetails1.put("name", "Accessories");
         categoryDetails1.put("id", 1);
@@ -36,6 +36,7 @@ public class SortingCategory {
         System.out.println(sortedCategoryArray.toJSONString());
     }
 
+    //Find the root to sort the categories
     @SuppressWarnings("unchecked")
     private static JSONArray sortCategoriesForInsert(JSONArray categoryArray) {
         JSONArray sortedCategoryArray = new JSONArray();
